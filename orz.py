@@ -5,10 +5,24 @@ load_dotenv()
 import random
 TOKEN = "TOKEN"
 client = discord.Client()
+
+hehe = "<:hehe:750745469843538011>"
+
+def hehe():
+    s = ""
+    for i in range(5):
+        for j in range(i+1):
+            s += hehe
+        s += "\n"
+    return s
+
 @client.event
 async def on_message(message):
     if message.author == client.user:
         return
+    if message.content == 'plz hehe':
+        response = hehe()
+        await message.channel.send(response)
     if message.content == 'plz orz':
         response = 'sir how so orz brooo <:liorz:751117138793726082>'
         await message.channel.send(response)
