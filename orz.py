@@ -3,7 +3,7 @@ import discord
 from dotenv import load_dotenv
 load_dotenv()
 import random
-TOKEN = "YOUR TOKEN"
+TOKEN = "TOKEN"
 client = discord.Client()
 @client.event
 async def on_message(message):
@@ -31,7 +31,7 @@ async def on_message(message):
         response = 'broo help in this problemm plzz..this is not from ongoing contest brooooo :pray::pray::pray:'
         await message.channel.send(response)
     if message.content == 'plz help bot':
-        response = "```yaml\nCommands with mandatory prefix plz:\norz\ngreet\nroadmap\ntestcase\njob\nhelp\ntrivial\nrequest\ncolin\nhw\nvises\nnishuz\nbro\nkms\nred```"
+        response = "```yaml\nCommands with mandatory prefix plz:\norz\ngreet\nroadmap\ntestcase\njob\nhelp\ntrivial\nrequest\ncolin\nhw\nvises\nnishuz\nbro\nkms\nred\nkek\nantiorz\nred```"
         await message.channel.send(response)
     if message.content == 'plz trivial':
         response = "plzz do proper bro so trivial broo"
