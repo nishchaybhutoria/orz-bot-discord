@@ -12,7 +12,7 @@ def hehe():
     s = ""
     for i in range(5):
         for j in range(i+1):
-            s += hehe
+            s += 'hehe'
         s += "\n"
     return s
 
